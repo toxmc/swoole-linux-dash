@@ -35,7 +35,7 @@
 ## 运行结果
 
 1. 打开页面如下所示
-![one](https://raw.githubusercontent.com/smalleyes/swoole-linux-tools/uptime/master/doc/uptime.png)
+![one](https://raw.githubusercontent.com/smalleyes/swoole-linux-tools/master/uptime/doc/uptime.png)
 
 ## nginx配置文件
 	1. 在doc/swoole-uptime.conf
