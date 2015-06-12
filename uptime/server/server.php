@@ -79,9 +79,7 @@ $server->on('open', function (swoole_websocket_server $server, $request) {
 			$str = str_replace('users', '', $str);
 			$str = str_replace('load average:', '', $str);
 			$str = $nowtime.','.$str;
-			if ($conn) {
-				$server->push($fd, $str);
-			}
+			$server->push($fd, $str);
 		}else{
 			$server->clearTimer($id);
 		}
