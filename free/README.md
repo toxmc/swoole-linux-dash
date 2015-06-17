@@ -29,7 +29,7 @@
 
 	1. cd free/server
 	2. php server.php
-	3. 修改web目录下stats.js代码 var ws = new ReconnectingWebSocket("ws://192.168.1.10:8880"); 改成服务器的IP
+	3. 修改web目录下stats.js代码 var ws = new ReconnectingWebSocket("ws://192.168.1.10:8881"); 改成服务器的IP
 	4. 用浏览器打开web目录下的index.html
 
 ## 运行结果
