@@ -42,7 +42,6 @@ function streamStats() {
 
             case 1: // column headings
                 colHeadings = e.data.trim().split(/,/);
-                console.log(colHeadings);
                 break;
 
             default: // subsequent lines

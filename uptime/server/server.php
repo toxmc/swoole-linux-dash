@@ -58,6 +58,38 @@ $server->on('start', function ($serv) use($_maxMasterPidLength, $_maxManagerPidL
 		 "\033[47;30mWorkerPid\033[0m", str_pad('', $_maxWorkerPidLength + 2 - strlen('WorkerPid')),"\n";
 });
 
+/**
+ * 当worker 启动的时候调用
+ */
+$server->on('workerStart',function ($serv, $worker_id) use($_maxMasterPidLength, $_maxManagerPidLength, $_maxWorkerIdLength, $_maxWorkerPidLength) {
+	echo str_pad($serv->master_pid, $_maxMasterPidLength+2),
+	str_pad($serv->manager_pid, $_maxManagerPidLength+2),
+	str_pad($serv->worker_id, $_maxWorkerIdLength+2),
+	str_pad($serv->worker_pid, $_maxWorkerIdLength), "\n";
+	
+	if ($worker_id==0) {
+		$data = $serv->table->get('uptime');
+		$serv->tick(1000, function($id) use($serv, $data) {
+			$conn_list = $serv->connection_list();
+			if (!empty($conn_list)) {
+				$str = exec($data['cmd'],$string);
+				foreach($conn_list as $fd) {
+					$conn = $serv->connection_info($fd);
+					if (!empty($conn)) {
+						$nowtime = substr($str, 0, strpos($str,'up'));
+						$str = str_replace($nowtime, '', $str);
+						$str = str_replace('up', '', $str);
+						$str = str_replace('days', '', $str);
+						$str = str_replace('users', '', $str);
+						$str = str_replace('load average:', '', $str);
+						$str = $nowtime.','.$str;
+						$serv->push($fd, $str);
+					}
+				}
+			}
+		});
+	}
+});
 
 /**
  * 当WebSocket客户端与服务器建立连接并完成握手后会回调此函数。
@@ -67,24 +99,6 @@ $server->on('open', function (swoole_websocket_server $server, $request) {
 	echo "server: handshake success with fd{$fd}\n";
 	$server->push($fd, "nowtime -----------Linetime---------- ---users-- -----load average----\n");
 	$server->push($fd, "nowtime,days,time,users,one,five,fifteen\n");
-	$server->tick(1000, function($id) use($server, $fd){
-		$data = $server->table->get('uptime');
-		$conn = $server->connection_info($fd);
-		if (!empty($conn)) {
-			$str = exec($data['cmd'],$string);
-			$nowtime = substr($str, 0, strpos($str,'up'));
-			$str = str_replace($nowtime, '', $str);
-			$str = str_replace('up', '', $str);
-			$str = str_replace('days', '', $str);
-			$str = str_replace('users', '', $str);
-			$str = str_replace('load average:', '', $str);
-			$str = $nowtime.','.$str;
-			$server->push($fd, $str);
-		}else{
-			$server->clearTimer($id);
-		}
-	});
-	
 });
 
 /**
@@ -102,14 +116,5 @@ $server->on('close', function ($ser, $fd) {
 	echo "client {$fd} closed\n";
 });
 
-/**
- * 当worker 启动的时候调用
- */
-$server->on('workerStart',function ($serv, $worker_id) use($_maxMasterPidLength, $_maxManagerPidLength, $_maxWorkerIdLength, $_maxWorkerPidLength) {
-	echo str_pad($serv->master_pid, $_maxMasterPidLength+2),
-		 str_pad($serv->manager_pid, $_maxManagerPidLength+2),
-		 str_pad($serv->worker_id, $_maxWorkerIdLength+2), 
-		 str_pad($serv->worker_pid, $_maxWorkerIdLength), "\n";;
-});
 
 $server->start();
