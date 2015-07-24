@@ -1,17 +1,13 @@
 # linux-tools
 linux-tools目录下的是linux性能工具集合，与swoole_vmstat类似
-
 运用swoole友好的实现Linux性能监控工具集合（uptime等）
 
 
 # Swoole Linux Dash
 
-
 A simple, low-overhead web dashboard for Linux.
 
-
-
-![Swoole Linux Dash screenshot](https://raw.githubusercontent.com/smalleyes/swoole-linux-dash/master/doc/dash1.png)
+![Swoole Linux Dash screenshot](https://raw.githubusercontent.com/smalleyes/swoole-linux-dash/master/Doc/dash1.png)
 
 ## 说明
 * 一个简单的, 美丽的，基于web的linux监控面板
@@ -22,21 +18,14 @@ A simple, low-overhead web dashboard for Linux.
 
 ### 1. 下载 Swoole Linux Dash
 
-Clone the git repo: 
+linux shell Clone the git repo: 
 
-```linux shell
 git clone https://github.com/smalleyes/swoole-linux-dash.git
-```
 
-wget the zip file:
+linux wget the zip file:
 
-```
-linux wget https://github.com/smalleyes/swoole-linux-dash/archive/master.zip
-```
-
-```
+wget https://github.com/smalleyes/swoole-linux-dash/archive/master.zip
 unzip master.zip
-```
 
 ### 2. 安全
 请自行做好安全相关的限制.
