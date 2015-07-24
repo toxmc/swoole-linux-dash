@@ -35,7 +35,7 @@
 ## 运行结果
 
 1. 打开页面如下所示
-![one](https://raw.githubusercontent.com/smalleyes/swoole-linux-tools/master/free/doc/free.png)
+![one](https://raw.githubusercontent.com/smalleyes/swoole-linux-dash/master/linux-tools/free/doc/free.png)
 
 ## nginx配置文件
 	1. 在doc/swoole-free.conf
