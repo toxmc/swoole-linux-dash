@@ -1,0 +1,58 @@
+[2015-07-24 11:48:15 *2776.0]	WARN	http_onReceive: connection[58] is closed.
+[2015-07-24 11:48:15 *2776.0]	WARN	http_onReceive: connection[59] is closed.
+[2015-07-24 11:48:15 *2776.0]	WARN	http_onReceive: connection[60] is closed.
+[2015-07-24 11:48:15 *2776.0]	WARN	http_onReceive: connection[61] is closed.
+[2015-07-24 11:48:15 *2776.0]	WARN	http_onReceive: connection[62] is closed.
+[2015-07-24 11:48:15 *2776.0]	WARN	http_onReceive: connection[63] is closed.
+[2015-07-24 11:48:15 *2776.0]	WARN	http_onReceive: connection[64] is closed.
+[2015-07-24 11:48:15 *2776.0]	WARN	http_onReceive: connection[65] is closed.
+[2015-07-24 11:48:15 *2776.0]	WARN	http_onReceive: connection[66] is closed.
+[2015-07-24 11:48:15 *2776.0]	WARN	http_onReceive: connection[67] is closed.
+[2015-07-24 11:48:15 *2776.0]	WARN	http_onReceive: connection[68] is closed.
+[2015-07-24 11:48:19 #2763.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#11 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 11:51:21 *2776.0]	WARN	http_onReceive: connection[324] is closed.
+[2015-07-24 11:51:21 *2776.0]	WARN	http_onReceive: connection[325] is closed.
+[2015-07-24 11:51:21 *2776.0]	WARN	http_onReceive: connection[326] is closed.
+[2015-07-24 11:51:21 *2776.0]	WARN	http_onReceive: connection[327] is closed.
+[2015-07-24 11:51:21 *2776.0]	WARN	http_onReceive: connection[328] is closed.
+[2015-07-24 11:51:21 *2776.0]	WARN	http_onReceive: connection[329] is closed.
+[2015-07-24 11:51:21 *2776.0]	WARN	http_onReceive: connection[330] is closed.
+[2015-07-24 11:51:43 *2776.0]	WARN	http_onReceive: connection[336] is closed.
+[2015-07-24 11:51:43 *2776.0]	WARN	http_onReceive: connection[337] is closed.
+[2015-07-24 11:51:43 *2776.0]	WARN	http_onReceive: connection[338] is closed.
+[2015-07-24 11:51:43 *2776.0]	WARN	http_onReceive: connection[339] is closed.
+[2015-07-24 12:10:57 #2763.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#9 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 12:17:23 #2763.0]	WARN	swReactorThread_send: send [4] failed, session#2847 is closed.
+[2015-07-24 12:18:44 #2763.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#9 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 12:24:39 #2763.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#9 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 12:26:13 #2763.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#9 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 12:28:16 #2763.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#9 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 12:29:04 #2763.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#10 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 12:30:03 #2763.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#9 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 12:31:00 #2763.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#9 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 12:31:01 #2763.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#9 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 12:37:21 #2763.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#9 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 12:38:26 #2763.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#9 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 12:40:11 #2763.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#9 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 12:43:20 #2763.0]	WARN	swReactorThread_send: send [4] failed, session#5956 is closed.
+[2015-07-24 12:45:17 #2763.0]	WARN	swReactorThread_send: send [4] failed, session#6189 is closed.
+[2015-07-24 12:53:14 #2763.0]	WARN	swReactorThread_send: send [4] failed, session#7144 is closed.
+[2015-07-24 12:58:03 #2763.0]	WARN	swReactorThread_send: send [4] failed, session#7721 is closed.
+[2015-07-24 13:02:50 #2763.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#9 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 13:03:26 #2763.0]	WARN	swReactorThread_send: send [4] failed, session#8367 is closed.
+[2015-07-24 13:10:17 #2763.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#9 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 13:10:29 #2763.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#9 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 13:12:02 #2763.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#9 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 13:15:50 #2763.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#9 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 13:17:42 #2763.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#9 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 13:22:11 #2763.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#9 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 13:23:19 #2763.0]	WARN	swReactorThread_send: send [4] failed, session#10754 is closed.
+[2015-07-24 13:25:28 #2763.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#9 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 13:29:44 #2763.0]	WARN	swReactorThread_send: send [4] failed, session#11524 is closed.
+[2015-07-24 13:29:51 #2763.0]	WARN	swReactorThread_send: send [4] failed, session#11538 is closed.
+[2015-07-24 14:36:31 #30293.0]	WARN	swReactorThread_send: send [4] failed, session#94 is closed.
+[2015-07-24 14:39:36 #30293.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#9 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 14:43:02 #30293.0]	WARN	swReactorThread_onReceive_http_request#1435: recv from connection#9 failed. Error: Socket operation on non-socket[88].
+[2015-07-24 14:48:47 *13384.2]	WARN	http_onReceive: connection[27] is closed.
+[2015-07-24 14:48:47 *13384.2]	WARN	http_onReceive: connection[31] is closed.
+[2015-07-24 14:52:43 #13369.1]	WARN	swReactorThread_send: send [4] failed, session#188 is closed.
