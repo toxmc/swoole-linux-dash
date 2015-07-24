@@ -1,5 +1,9 @@
 # swoole-linux-tools
-运用swoole友好的实现Linux性能监控工具集合（uptime等）
+运用swoole友好的实现Linux性能监控工具集合（free,uptime等）
+
+![Linux free screenshot](https://raw.githubusercontent.com/smalleyes/swoole-linux-dash/master/linux-tools/free/doc/free.png)
+![Linux uptime screenshot](https://raw.githubusercontent.com/smalleyes/swoole-linux-dash/master/linux-tools/uptime/doc/uptime.png)
+
 ## 依赖
 
 * PHP 5.3+
